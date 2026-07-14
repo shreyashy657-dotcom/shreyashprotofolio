@@ -70,9 +70,9 @@ const NAV = [
   { id: "contact", label: "Contact" },
 ];
 
-const fadeUp = {
+const fadeUp: import("framer-motion").Variants = {
   hidden: { opacity: 0, y: 24 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] } },
+  show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] as const } },
 };
 
 function Section({
